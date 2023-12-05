@@ -20,8 +20,8 @@ const Routers = () => {
       <Route path="/blogs" element={<Blog />} />
       <Route path="/blogs/:slug" element={<BlogDetails />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="*" element={<NotFound />} />
-      <Route path="/Login" component={<Login/>} />
+      <Route path="*" element={<h1>404<br />Page not found</h1>} />
+      
     </Routes>
   );
 };
