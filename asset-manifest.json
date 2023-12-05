@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/Mini-Prjt/static/css/main.fdbaf957.css",
+    "main.js": "/Mini-Prjt/static/js/main.5dca2c80.js",
+    "static/media/remixicon.svg?t=1690730386070": "/Mini-Prjt/static/media/remixicon.db77551b8efc76571c4f.svg",
+    "static/media/img9.png": "/Mini-Prjt/static/media/img9.232aa0d3a47be3219b92.png",
+    "static/media/img16.png": "/Mini-Prjt/static/media/img16.09c9aca06bdff2e0998e.png",
+    "static/media/remixicon.eot?t=1690730386070": "/Mini-Prjt/static/media/remixicon.53ec05edb4b6864b45b1.eot",
+    "static/media/remixicon.ttf?t=1690730386070": "/Mini-Prjt/static/media/remixicon.4aa0fd158658e2a40e79.ttf",
+    "static/media/ava-1.jpg": "/Mini-Prjt/static/media/ava-1.c185d7723fe40ec46830.jpg",
+    "static/media/ava-3.jpg": "/Mini-Prjt/static/media/ava-3.1442075049ece43143f2.jpg",
+    "static/media/img14.png": "/Mini-Prjt/static/media/img14.1d7358e0aed16e399357.png",
+    "static/media/ava-2.jpg": "/Mini-Prjt/static/media/ava-2.11e918c656d0c7851624.jpg",
+    "static/media/ava-4.jpg": "/Mini-Prjt/static/media/ava-4.5f15524f7b3f80a834df.jpg",
+    "static/media/remixicon.woff?t=1690730386070": "/Mini-Prjt/static/media/remixicon.affd60ca37df38cfee4f.woff",
+    "static/media/img10.png": "/Mini-Prjt/static/media/img10.feeff1dd21cf94dd2b47.png",
+    "static/media/img17.webp": "/Mini-Prjt/static/media/img17.04af85337be20442fb53.webp",
+    "static/media/remixicon.woff2?t=1690730386070": "/Mini-Prjt/static/media/remixicon.821a773710130bcf4674.woff2",
+    "static/media/bmw-offer.png": "/Mini-Prjt/static/media/bmw-offer.ecfb9ac1bf7b5ef615a6.png",
+    "static/media/nissan-offer.png": "/Mini-Prjt/static/media/nissan-offer.6eddc86310b7cac538ae.png",
+    "static/media/toyota-offer-2.png": "/Mini-Prjt/static/media/toyota-offer-2.861de085d1c782df9e9d.png",
+    "static/media/offer-toyota.png": "/Mini-Prjt/static/media/offer-toyota.4b2435e447a7832d9f4a.png",
+    "static/media/mercedes-offer.png": "/Mini-Prjt/static/media/mercedes-offer.d177a4fe9e2002ddb24d.png",
+    "static/media/drive.jpg": "/Mini-Prjt/static/media/drive.b72e6f2d1ccdbd6550a9.jpg",
+    "static/media/img5.jpg": "/Mini-Prjt/static/media/img5.96206bb2e04eac6945a0.jpg",
+    "static/media/img13.webp": "/Mini-Prjt/static/media/img13.10316b511f978085c5db.webp",
+    "static/media/slick.svg": "/Mini-Prjt/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Mini-Prjt/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Mini-Prjt/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Mini-Prjt/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Mini-Prjt/index.html",
+    "main.fdbaf957.css.map": "/Mini-Prjt/static/css/main.fdbaf957.css.map",
+    "main.5dca2c80.js.map": "/Mini-Prjt/static/js/main.5dca2c80.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fdbaf957.css",
+    "static/js/main.5dca2c80.js"
+  ]
+}
