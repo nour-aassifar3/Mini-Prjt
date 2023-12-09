@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/booking-form.css";
-import { Form, FormGroup } from "reactstrap";
+import { Form, FormGroup,Row,Col } from "reactstrap";
 
 const BookingForm = () => {
   const submitHandler = (event) => {
     event.preventDefault();
+  };
+  const [comeToYou, setComeToYou] = useState(false);
+  const handleCheckboxChange = () => {
+    setComeToYou(!comeToYou);
   };
   return (
     <Form onSubmit={submitHandler}>
@@ -21,31 +25,41 @@ const BookingForm = () => {
       <FormGroup className="booking__form d-inline-block ms-1 mb-4">
         <input type="tel" placeholder="Phone Number" />
       </FormGroup>
+      
 
-      <FormGroup className="booking__form d-inline-block me-4 mb-4">
-        <input type="text" placeholder="From Address" />
+      {!comeToYou && (
+        <>
+          <FormGroup className="booking__form d-inline-block me-4 mb-4">
+            <input type="text" placeholder="From Address" />
+          </FormGroup>
+          <FormGroup className="booking__form d-inline-block ms-1 mb-4">
+            <input type="text" placeholder="To Address" />
+          </FormGroup>
+        </>
+      )}
+      <Row>
+        <Col lg="12">
+            <FormGroup check>
+              <label check>
+                <input
+                  type="checkbox"
+                  checked={comeToYou}
+                  onChange={handleCheckboxChange}
+                />
+                
+                <span className="ml-2 fw-bold text-success"> I will come to you to take it</span>
+              </label>
+            </FormGroup>
+        </Col>
+        
+      </Row>
+      <FormGroup className="booking__form d-inline-block me-4 mb-4 mt-4">
+        <label htmlFor=""> <h5 className="mb-4 fw-bold ">Enter your driver's license</h5></label>
+        <input type="file" name="" id="" />
       </FormGroup>
       <FormGroup className="booking__form d-inline-block ms-1 mb-4">
-        <input type="text" placeholder="To Address" />
-      </FormGroup>
-
-      <FormGroup className="booking__form d-inline-block me-4 mb-4">
-        <select name="" id="">
-          <option value="1 person">1 Person</option>
-          <option value="2 person">2 Person</option>
-          <option value="3 person">3 Person</option>
-          <option value="4 person">4 Person</option>
-          <option value="5+ person">5+ Person</option>
-        </select>
-      </FormGroup>
-      <FormGroup className="booking__form d-inline-block ms-1 mb-4">
-        <select name="" id="">
-          <option value="1 luggage">1 luggage</option>
-          <option value="2 luggage">2 luggage</option>
-          <option value="3 luggage">3 luggage</option>
-          <option value="4 luggage">4 luggage</option>
-          <option value="5+ luggage">5+ luggage</option>
-        </select>
+      <label htmlFor=""> <h5 className="mb-4 fw-bold ">Enter a photo copy of your national card</h5></label>
+      <input type="file" name="" id="" />
       </FormGroup>
 
       <FormGroup className="booking__form d-inline-block me-4 mb-4">

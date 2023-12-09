@@ -1,10 +1,10 @@
 import React from "react";
-
-import masterCard from "../../assets/all-images/master-card.jpg";
-import paypal from "../../assets/all-images/paypal.jpg";
 import "../../styles/payment-method.css";
-
 const PaymentMethod = () => {
+  const styllink = {
+    color: "white",
+    TextDecoder: "none",
+  };
   return (
     <>
       <div className="payment">
@@ -32,10 +32,11 @@ const PaymentMethod = () => {
         </label>
       </div>
       <div className="payment text-end mt-5">
-        <button>Reserve Now</button>
+        <button>
+        <span style={styllink}>Reserve Now</span>
+        </button>
       </div>
     </>
   );
 };
-
 export default PaymentMethod;

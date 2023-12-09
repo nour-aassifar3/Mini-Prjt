@@ -74,4 +74,18 @@
 
 }
 
+@media screen and (max-width: 991px) {
+  .footer__logo {
+    text-align: center;
+  }
+  .quick__link {
+    margin-left:43px;
+  
+    flex-direction: column;
 
+  }
+  .quick__link a {
+    display: block; /* Afficher les liens en tant que bloc pour les empiler verticalement */
+    margin-bottom: 10px; /* Ajouter une marge inférieure pour séparer les liens */
+  }
+}

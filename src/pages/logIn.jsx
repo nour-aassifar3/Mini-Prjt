@@ -1,97 +1,80 @@
-import React from 'react'
-import { Link } from "react-router-dom";
-import { Container, Row, Col, Form, FormGroup, Input } from "reactstrap";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import "../styles/logIn.css";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
 
 
-const socialLinks = [
-  {
-    url: "#",
-    icon: "ri-facebook-line",
-  },
-  {
-    url: "#",
-    icon: "ri-instagram-line",
-  },
-  {
-    url: "#",
-    icon: "ri-linkedin-line",
-  },
-  {
-    url: "#",
-    icon: "ri-twitter-line",
-  },
-];
+function Login() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [signupChecked, setSignupChecked] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(false); // Ajoutez un état pour suivre l'état de connexion
 
-const Clog = () => {
+  const handleLogin = () => {
+    if (email === 'dev204@gmail.com' && password === 'admin123') {
+      setLoggedIn(true); 
+    } else {
+      alert('Identifiants incorrects.');
+    }
+  };
+
+  const stylelink = {
+    color: "white",
+    TextDecoder: "none",
+  };
+
   return (
-    <Helmet title="Contact">
-      <CommonSection title="Contact" />
-      <section>
-        <Container>
-          <Row>
-            <Col lg="7" md="7">
-              <h6 className="fw-bold mb-4">Get In Touch</h6>
-
-              <Form>
-                <FormGroup className="contact__form">
-                  <Input placeholder="Your Name" type="text" />
-                </FormGroup>
-                <FormGroup className="contact__form">
-                  <Input placeholder="Email" type="email" />
-                </FormGroup>
-                <FormGroup className="contact__form">
-                  <textarea
-                    rows="5"
-                    placeholder="Message"
-                    className="textarea"
-                  ></textarea>
-                </FormGroup>
-
-                <button className=" contact__btn" type="submit">
-                  Send Message
-                </button>
-              </Form>
-            </Col>
-
-            <Col lg="5" md="5">
-              <div className="contact__info">
-                <h6 className="fw-bold">Contact Information</h6>
-                <p className="section__description mb-0">
-                  123 ZindaBazar, Sylhet, Bangladesh
-                </p>
-                <div className=" d-flex align-items-center gap-2">
-                  <h6 className="fs-6 mb-0">Phone:</h6>
-                  <p className="section__description mb-0">+88683896366</p>
-                </div>
-
-                <div className=" d-flex align-items-center gap-2">
-                  <h6 className="mb-0 fs-6">Email:</h6>
-                  <p className="section__description mb-0">example@gmail.com</p>
-                </div>
-
-                <h6 className="fw-bold mt-4">Follow Us</h6>
-
-                <div className=" d-flex align-items-center gap-4 mt-3">
-                  {socialLinks.map((item, index) => (
-                    <Link
-                      to={item.url}
-                      key={index}
-                      className="social__link-icon"
-                    >
-                      <i class={item.icon}></i>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+    <Helmet title="Login">
+    <CommonSection title="Login Page" />
+    <div className="con d-flex justify-content-center align-items-center vh-100">
+      <div className="card p-4">
+        <h1 className="text-center mb-4">login Page</h1>
+        <form>
+          <div className="mb-3">
+            <label htmlFor="email" className="form-label"> Email :</label>
+            <input
+              type="email"
+              id="email"
+              className="form-control"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="password" className="form-label">Password:</label>
+            <input
+              type="password"
+              id="password"
+              className="form-control"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+          <div className="mb-3 form-check">
+            <input
+              type="checkbox"
+              className="form-check-input"
+              id="signupCheckbox"
+              checked={signupChecked}
+              onChange={() => setSignupChecked(!signupChecked)}
+            />
+            <label className="form-check-label " htmlFor="signupCheckbox">I don't have an account(Sign up now)</label>
+          </div>
+          <button type="button" className="buttn" onClick={handleLogin}>
+            Log In
+          </button>
+          {signupChecked && !loggedIn && (
+            <button className="buttn">
+              <Link to="/Signup" style={stylelink}>Sign Up</Link>
+            </button>
+          )}
+          {loggedIn && <Link to="/home"><button className="buttn">Continue</button></Link>}
+        </form>
+      </div>
+    </div>
     </Helmet>
   );
-};
+}
 
-export default Clog;
-
+export default Login;

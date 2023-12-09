@@ -1,10 +1,7 @@
 import React, { useRef } from "react";
-
 import { Container, Row, Col } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
 import "../../styles/header.css";
-import { Button } from 'reactstrap';
-
 
 const navLinks = [
   {
@@ -29,6 +26,11 @@ const navLinks = [
     display: "Contact",
   },
 ];
+const styllink = {
+  color: "black",
+  TextDecoder: "none",
+
+};
 
 const Header = () => {
   const menuRef = useRef(null);
@@ -44,7 +46,7 @@ const Header = () => {
             <Col lg="2" md="6" sm="6">
               <div className="header__top__left"  style={{ marginTop: '5px' }}>
                 <span className="header__top__help">
-                Need Help?<i class="ri-phone-fill"></i> +212654014259
+                Need Help?<i class="ri-phone-fill"></i> 0654014259
                 </span>
               </div>
             </Col>
@@ -161,7 +163,7 @@ const Header = () => {
                   <Link to="/home" className=" d-flex align-items-center gap-2">
                     <i class="ri-car-line"></i>
                     <span>
-                    Automobil  <br />Loc Nour
+                    Automobil  <br />Rental
                     </span>
                   </Link>
                 </h1>
@@ -234,40 +236,11 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="header__top__right d-flex align-items-center justify-content-end gap-3" style={{ marginTop: '8px' }}>
-              <Button
-                tag={Link} to="#"
-                className="d-flex align-items-center gap-1"
-                style={{
-                  color: 'black',
-                  backgroundColor: 'white',
-                  transition: 'background-color 0.3s, color 0.3s',
-                  fontWeight:"bolder",
-                }}
-                active
-                onMouseEnter={(e) => e.target.style.backgroundColor = 'red'}
-                onMouseLeave={(e) => e.target.style.backgroundColor = 'white'}
-              >
-                <i ></i> Log In
-              </Button>
-
-              <Button
-                tag={Link}
-                to="#"
-                className="d-flex align-items-center gap-1"
-                style={{
-                  color: 'black',
-                  backgroundColor: 'white',
-                  transition: 'background-color 0.3s, color 0.3s',
-                  fontWeight:"bolder",
-                }}
-                active
-                onMouseEnter={(e) => e.target.style.backgroundColor = 'red'}
-                onMouseLeave={(e) => e.target.style.backgroundColor = 'white'}
-              > 
-              <i ></i> Sign Up
-              </Button>
-              </div>
+            <div className="header__top__right d-flex align-items-center justify-content-end gap-3" style={{ marginTop: '8px' }}>             
+              <button className="buttna">
+              <Link to="/Login" style={styllink}>LOG IN</Link>
+              </button>
+            </div>
           </div>
           
         </Container>

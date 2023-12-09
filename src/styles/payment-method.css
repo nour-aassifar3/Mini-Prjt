@@ -6,8 +6,11 @@
 .payment button {
   padding: 8px 15px;
   border-radius: 5px;
-  background: green;
+  background: red;
   color: #fff;
   border: none;
   outline: none;
+}
+span{
+  font-weight: bolder;
 }

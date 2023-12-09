@@ -115,7 +115,25 @@ margin-left:20px;
 .header__btn a:hover {
   color: red;
 }
+.log:hover{
+  background-color: red;
+  color:white;
+}
 
+.buttna{
+  background-color: white !important;
+  color:black !important;
+  border-radius:  3px;
+  border: solid white 1px;
+  width:85px;
+  height:35px;
+  
+}
+.buttna:hover{
+  background-color: red !important;
+  color:white !important;
+  border: solid red 1px;
+}
 /* ================ main navbar styles =========== */
 
 .main__navbar {

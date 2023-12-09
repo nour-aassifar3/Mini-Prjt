@@ -12,12 +12,12 @@ const quickLinks = [
 
   {
     path: "#",
-    display: "Privacy Policy",
+    display: "home",
   },
 
   {
     path: "/cars",
-    display: "Car Listing",
+    display: "Cars",
   },
   {
     path: "/blogs",
@@ -51,7 +51,7 @@ const Footer = () => {
               <Link to="/home" className="d-flex align-items-center gap-2">
                 <i className="ri-car-line"></i>
                 <span>
-                  Automobil <br /> Loc Nour
+                  Automobil <br /> Rental
                 </span>
               </Link>
             </h1>
@@ -87,8 +87,7 @@ const Footer = () => {
           <Col lg="12">
             <div className="footer__bottom">
               <p id="p" className="section__description d-flex align-items-center justify-content-center gap-1 pt-4">
-                <i class="ri-copyright-line"></i>Copyright {year}, Developed by
-                Muhibur Rahman. All rights reserved.
+                <i class="ri-copyright-line"></i>Copyright {year}. All rights reserved.
               </p>
             </div>
           </Col>

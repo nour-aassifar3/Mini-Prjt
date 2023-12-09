@@ -6,9 +6,9 @@ import CarListing from "../pages/CarListing";
 import CarDetails from "../pages/CarDetails";
 import Blog from "../pages/Blog";
 import BlogDetails from "../pages/BlogDetails";
-import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
 import Login from "../pages/logIn.jsx";
+
 const Routers = () => {
   return (
     <Routes>
@@ -21,7 +21,9 @@ const Routers = () => {
       <Route path="/blogs/:slug" element={<BlogDetails />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<h1>404<br />Page not found</h1>} />
+      <Route path="/Login" element={<Login />} />
       
+
     </Routes>
   );
 };
