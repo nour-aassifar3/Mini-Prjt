@@ -75,8 +75,6 @@ const Header = () => {
               style={{ marginRight: '15px' }}
               className="imgs-logo"
             />
-            
-            
             <img width="44px" height="48px"
               src="https://logos-marques.com/wp-content/uploads/2021/02/Symbole-Ford.jpg"
               alt="ford"
@@ -101,7 +99,6 @@ const Header = () => {
               style={{ marginRight: '15px' , marginTop:"2px"}}
               className="imgs-logo"
             />
-            
             <img width="36px" height="30px"
               src="https://th.bing.com/th/id/OIP.-m6UxvNHkY60MhrRAfNgvAHaHa?rs=1&pid=ImgDetMain"
               alt="puegeot"
@@ -120,13 +117,6 @@ const Header = () => {
               style={{ marginRight: '15px' , marginTop:"2px"}}
               className="imgs-logo"
             />
-            <img width="55px" height="35px"
-              src="https://th.bing.com/th/id/OIP.e3mGp92Z46gEZ0h5ZiYTewHaC9?rs=1&pid=ImgDetMain"
-              alt="audi"
-              style={{ marginRight: '15px' , marginTop:"2px"}}
-              className="imgs-logo"
-            />
-            
             </Col>
             <Col lg="2" md="6" sm="6" className=" d-flex align-items-center justify-content-end ">
               <button className="header__btn btn ">
