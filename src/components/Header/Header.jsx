@@ -75,12 +75,7 @@ const Header = () => {
               style={{ marginRight: '15px' }}
               className="imgs-logo"
             />
-             <img width="41px" height="43px"
-              src="https://www.incpak.com/wp-content/uploads/2021/06/KIA-Car-Delivery-Delay.jpg"
-              alt="kia"
-              style={{ marginRight: '15px' }}
-              className="imgs-logo"
-            />
+            
             
             <img width="44px" height="48px"
               src="https://logos-marques.com/wp-content/uploads/2021/02/Symbole-Ford.jpg"
@@ -106,12 +101,7 @@ const Header = () => {
               style={{ marginRight: '15px' , marginTop:"2px"}}
               className="imgs-logo"
             />
-            <img width="30px" height="32px"
-              src="https://th.bing.com/th/id/OIP.pOE4HGluA8K68ZJvK8rYTQHaG1?w=736&h=679&rs=1&pid=ImgDetMain"
-              alt="citroin"
-              style={{ marginRight: '15px' , marginTop:"2px"}}
-              className="imgs-logo"
-            />
+            
             <img width="36px" height="30px"
               src="https://th.bing.com/th/id/OIP.-m6UxvNHkY60MhrRAfNgvAHaHa?rs=1&pid=ImgDetMain"
               alt="puegeot"
