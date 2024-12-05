@@ -126,11 +126,7 @@ const Header = () => {
               style={{ marginRight: '15px' , marginTop:"2px"}}
               className="imgs-logo"
             />
-            <img width="46px" height="40px"
-              src="https://089-kfz-gutachten-muenchen.de/wp-content/uploads/dacia-fahrzeughersteller.jpg"
-              alt="dacia"
-              className="img-logo"
-            />
+            
             </Col>
             <Col lg="2" md="6" sm="6" className=" d-flex align-items-center justify-content-end ">
               <button className="header__btn btn ">
